@@ -1,6 +1,18 @@
-package com.zhi;/**
+package com.zhi;
+
+import lombok.*;
+
+/**
  * @Author: luowenzhi
  * @CreateTime: 8/12/2021
  * @desc:
- */public class Company {
+ */
+@Data
+@ToString
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class Company {
+    private String name;
+    private String address;
 }

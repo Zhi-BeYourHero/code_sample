@@ -4,10 +4,14 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/GitTest/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_mercy/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/design_pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/ratelimiter/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
