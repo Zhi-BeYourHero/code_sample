@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/kafka_demo/kafka_demo.iml" filepath="$PROJECT_DIR$/kafka_demo/kafka_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ratelimiter/ratelimiter.iml" filepath="$PROJECT_DIR$/ratelimiter/ratelimiter.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_mercy/spring_mercy.iml" filepath="$PROJECT_DIR$/spring_mercy/spring_mercy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_mercy/spring_retry/spring_retry.iml" filepath="$PROJECT_DIR$/spring_mercy/spring_retry/spring_retry.iml" />
     </modules>
   </component>
 </project>
