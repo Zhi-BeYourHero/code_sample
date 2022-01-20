@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/code_sample.iml" filepath="$PROJECT_DIR$/.idea/code_sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/design_pattern/design_pattern.iml" filepath="$PROJECT_DIR$/design_pattern/design_pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_mercy/ioc-container-overview/ioc-container-overview.iml" filepath="$PROJECT_DIR$/spring_mercy/ioc-container-overview/ioc-container-overview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_base_demo/java_base_demo.iml" filepath="$PROJECT_DIR$/java_base_demo/java_base_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka_demo/kafka_demo.iml" filepath="$PROJECT_DIR$/kafka_demo/kafka_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ratelimiter/ratelimiter.iml" filepath="$PROJECT_DIR$/ratelimiter/ratelimiter.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_mercy/spring_mercy.iml" filepath="$PROJECT_DIR$/spring_mercy/spring_mercy.iml" />
