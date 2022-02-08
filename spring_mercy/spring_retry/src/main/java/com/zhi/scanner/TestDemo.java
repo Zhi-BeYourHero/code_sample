@@ -9,7 +9,27 @@ import org.springframework.context.support.GenericApplicationContext;
  */
 public class TestDemo {
 
+    private static final String BASE = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+    public static String toBase62(long num) {
+        StringBuilder sb = new StringBuilder();
+        int targetBase = BASE.length();
+        do {
+            int i = (int) (num % targetBase);
+            sb.append(BASE.charAt(i));
+            num /= targetBase;
+        } while (num > 0);
+
+        return sb.reverse().toString();
+    }
+
     public static void main(String[] args) {
+        System.out.println(toBase62(62));
+        System.out.println(toBase62(1000));
+        System.out.println(toBase62(11111));
+    }
+
+    public void testScan() {
         String BASE_PACKAGE = "com.zhi.scanner";
         GenericApplicationContext genericApplicationContext = new GenericApplicationContext();
         MyClassPathDefinitionScanner definitionScanner = new MyClassPathDefinitionScanner(genericApplicationContext, MyScanBean.class);

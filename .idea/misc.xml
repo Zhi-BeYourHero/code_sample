@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/ratelimiter/pom.xml" />
         <option value="$PROJECT_DIR$/spring_mercy/spring_retry/pom.xml" />
         <option value="$PROJECT_DIR$/java_base_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/biz_demo/pom.xml" />
       </list>
     </option>
   </component>
