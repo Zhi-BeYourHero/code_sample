@@ -10,5 +10,5 @@ import org.springframework.context.annotation.Import;
  */
 @Configuration
 @Import(MyImportSelector.class)
-public class MyConfigure {
+public class MyConfigure1 {
 }
