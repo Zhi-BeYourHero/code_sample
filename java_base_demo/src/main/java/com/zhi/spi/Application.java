@@ -1,10 +1,13 @@
 package com.zhi.spi;
 
+import com.zhi.IsAssignableFromDemo.ParamDefaultValue;
+import lombok.Builder;
+import lombok.Data;
+import org.reflections.Reflections;
+
 import java.io.IOException;
-import java.net.URL;
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.ServiceLoader;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @Author: luowenzhi
@@ -13,14 +16,30 @@ import java.util.ServiceLoader;
  */
 public class Application {
     public static void main(String[] args) throws IOException {
-        Enumeration<URL> systemResources = ClassLoader.getSystemResources("META-INF/services/com.zhi.spi.Say");
-        URL url = systemResources.nextElement();
-        System.out.println(url);
-        ServiceLoader<Say> serviceLoader = ServiceLoader.load(Say.class);
-        Iterator<Say> iterator = serviceLoader.iterator();
-        while (iterator.hasNext()){
-            Say say = iterator.next();
-            say.say();
-        }
+        Reflections reflections = new Reflections("com.zhi.IsAssignableFromDemo");
+        Set<Class<?>> typesAnnotatedWith = reflections.getTypesAnnotatedWith(ParamDefaultValue.class);
+        System.out.println(typesAnnotatedWith);
+//        testComparator();
+    }
+
+
+
+    @Builder
+    @Data
+    public static class Version {
+        private Integer maxVersion;
+        private Integer subVersion;
+    }
+
+    private static void testComparator() {
+        Version v1 = Version.builder().maxVersion(1).subVersion(1).build();
+        Version v2 = Version.builder().maxVersion(1).subVersion(2).build();
+        Version v3 = Version.builder().maxVersion(2).subVersion(1).build();
+        List<Version> versionList = Arrays.asList(v1, v2, v3);
+        List<Version> versions = versionList.stream().sorted(
+                Comparator.comparing(Version::getMaxVersion).reversed()
+                        .thenComparing(Version::getSubVersion)
+        ).collect(Collectors.toList());
+        System.out.println(versions);
     }
 }

@@ -2,6 +2,8 @@ package com.zhi.controller;
 
 import com.zhi.service.RetryService;
 import com.zhi.service.TestService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.retry.annotation.EnableRetry;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +24,8 @@ import javax.servlet.http.HttpSession;
 @Controller
 @EnableRetry
 public class TestController {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(TestController.class);
 
     @Resource
     private RetryService retryService;
@@ -50,5 +54,13 @@ public class TestController {
     @ResponseBody
     public String testScope1() {
         return String.valueOf(testService1.hashCode());
+    }
+
+    @GetMapping("testXSS")
+    @ResponseBody
+    public String testXSS(String name) {
+        LOGGER.info("my name is :" + name);
+        LOGGER.error("terrible! err:" + name);
+        return name;
     }
 }
