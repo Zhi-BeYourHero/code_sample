@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.retry.annotation.EnableRetry;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -58,7 +59,7 @@ public class TestController {
 
     @GetMapping("testXSS")
     @ResponseBody
-    public String testXSS(String name) {
+    public String testXSS(@RequestParam("name") String name) {
         LOGGER.info("my name is :" + name);
         LOGGER.error("terrible! err:" + name);
         return name;

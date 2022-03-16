@@ -14,7 +14,9 @@
       <module fileurl="file://$PROJECT_DIR$/project_layer/project-persist/project-persist.iml" filepath="$PROJECT_DIR$/project_layer/project-persist/project-persist.iml" />
       <module fileurl="file://$PROJECT_DIR$/project_layer/project_layer.iml" filepath="$PROJECT_DIR$/project_layer/project_layer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ratelimiter/ratelimiter.iml" filepath="$PROJECT_DIR$/ratelimiter/ratelimiter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_mercy/spring_mercy/spring_demo.iml" filepath="$PROJECT_DIR$/spring_mercy/spring_mercy/spring_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_mercy/spring_mercy.iml" filepath="$PROJECT_DIR$/spring_mercy/spring_mercy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_mercy/spring_pra_demo/spring_pra_demo.iml" filepath="$PROJECT_DIR$/spring_mercy/spring_pra_demo/spring_pra_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_mercy/spring_retry/spring_retry.iml" filepath="$PROJECT_DIR$/spring_mercy/spring_retry/spring_retry.iml" />
     </modules>
   </component>
